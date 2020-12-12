@@ -21,7 +21,7 @@ export default class MyDocument extends Document {
           <link rel="apple-touch-icon" href="/static/classroom.png"></link>
           <meta name="theme-color" content="#317EFB" />
         </Head>
-        <body>
+        <body style={{ margin: 0 }}>
           <Main />
           <NextScript />
         </body>
