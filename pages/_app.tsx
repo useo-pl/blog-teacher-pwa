@@ -1,9 +1,14 @@
 import React from 'react';
+import { AuthProvider, GoogleAuthProvider } from '../hooks/firebase/contexts';
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Component {...pageProps} />
+      <AuthProvider>
+        <GoogleAuthProvider>
+          <Component {...pageProps} />
+        </GoogleAuthProvider>
+      </AuthProvider>
     </>
   );
 }
