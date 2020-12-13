@@ -3,7 +3,7 @@ import { AuthContext, GoogleAuthContext } from './contexts';
 import { useLocalStorage } from '../../hooks';
 import firebase from 'firebase';
 
-type User = firebase.auth.UserCredential | null;
+export type User = firebase.auth.UserCredential | null;
 
 const useAuth = () => {
   const googleAuth = React.useContext(GoogleAuthContext);
